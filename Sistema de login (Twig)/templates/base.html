@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{titulo ?? 'SEM TITULO'}}</title>
+</head>
+<body>
+    <h1>{{titulo ?? 'SEM TITULO'}}</h1>
+    <a href="criarBanco.php">Recriar Banco</a>
+    <!-- Essa linha em um código real, não existirá, eu uso isso só para quando começar a codar em outro lugar,
+    em um click ter o banco pronto --> 
+    |
+    <a href="adcUsuario.php">Adicionar Usuário</a>
+    <!-- Essa linha em um código real, só os adiministradores vão ter acesso --> 
+    |
+    <a href="index.php">Voltar para o login</a>
+
+    </p>
+    <hr>
+    {% block conteudo %}{% endblock %}
+</body>
+</html>
