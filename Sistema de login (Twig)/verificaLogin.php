@@ -5,7 +5,6 @@ $email = $_POST['email'] ?? null;
 $senha = $_POST['senha'] ?? null;
 
 // Filtrando a senha
-
 $senhaFiltrada = filter_input(INPUT_POST, $senha, FILTER_SANITIZE_STRING);
 
 // Conecta ao banco de dados
