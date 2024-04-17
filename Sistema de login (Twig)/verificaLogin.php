@@ -19,13 +19,6 @@ if (!$row) {
     exit();
 }
 
-echo $senhaFiltrada;
-echo '<br>';
-echo $row['senha'];
-echo '<br>';
-$teste = password_verify($senhaFiltrada, $row['senha']);
-echo $teste ? 'Senha correta' : 'Senha incorreta';
-var_dump($teste);
 // Verifica se a senha fornecida corresponde à senha armazenada no banco de dados
 if (password_verify($senhaFiltrada, $row['senha'])) {
 
